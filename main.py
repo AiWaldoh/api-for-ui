@@ -7,13 +7,9 @@ from fastapi import FastAPI, Body
 load_dotenv()
 
 app = FastAPI()
-@app.get("/")
-async def root():
-    return {"greeting": "Hello, World!", "message": "Welcome to FastAPI!"}
-
 
 co = cohere.Client(os.getenv("COHERE_API_KEY"))
-db = lancedb.connect("~/lancedb")
+db = lancedb.connect("lancedb")
 
 
 def search_table(table, query_text, limit):
