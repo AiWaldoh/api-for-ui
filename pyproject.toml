@@ -6,11 +6,14 @@ authors = ["AiWaldoh <kevin@gptcoder.pro>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+
 lancedb = "^0.6.11"
 cohere = "^5.3.3"
 python-dotenv = "^1.0.1"
 fastapi = "^0.110.2"
 uvicorn = "^0.29.0"
+pandas = "^2.2.2"
 
 [build-system]
 requires = ["poetry-core"]
