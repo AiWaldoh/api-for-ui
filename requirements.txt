@@ -1,5 +1,6 @@
 
 lancedb>=0.6.11,<0.7.0
 cohere>=5.3.3,<6.0
+python-dotenv>=1.0.1,<2.0
 hypercorn>=0.16.0,<0.17.0
 fastapi>=0.110.2,<1.0
