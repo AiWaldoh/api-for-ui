@@ -9,7 +9,7 @@ load_dotenv()
 app = FastAPI()
 
 co = cohere.Client(os.getenv("COHERE_API_KEY"))
-db = lancedb.connect("lancedb")
+db = lancedb.connect("./lancedb")
 
 
 def search_table(table, query_text, limit):
