@@ -25,9 +25,10 @@ def search_db(tbl, question, limit=5):
 async def ask_question(
     question: str = Body(...), table_name: str = Body(...), prompt: str = Body(...)
 ):
+    print("open table")
     tbl = db.open_table(table_name)
-
-    result = search_db(tbl, question, limit=10)
+    print("search table")
+    result = search_db(tbl, question, limit=5)
     documents = result["text"].to_list()
     filenames = result["path"].to_list()
     print(result.path)
