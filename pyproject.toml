@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "adscb"
+version = "0.1.0"
+description = ""
+authors = ["AiWaldoh <kevin@gptcoder.pro>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+beautifulsoup4 = "^4.12.3"
+selenium = "^4.20.0"
+lxml = "^5.2.1"
+lancedb = "^0.6.11"
+cohere = "^5.3.3"
+python-dotenv = "^1.0.1"
+streamlit = "^1.33.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
